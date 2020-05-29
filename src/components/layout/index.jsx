@@ -34,9 +34,9 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <script src="https://utteranc.es/client.js" repo="hmu332233/utterances.blog" issue-term="pathname" theme="github-light" crossorigin="anonymous" async></script>
         <footer>
-          © {new Date().getFullYear()}.{` `}
+          © {new Date().getFullYear()}.
+          {` `}
           minung.han
         </footer>
       </div>
