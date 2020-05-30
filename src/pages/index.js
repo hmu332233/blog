@@ -2,7 +2,6 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
-import Image from '../components/image';
 import SEO from '../components/seo';
 import PostLink from '../components/PostLink';
 import Utterances from '../components/Utterances';
@@ -18,13 +17,13 @@ const IndexPage = ({
   return (
     <Layout>
       <SEO title="Home" />
-      <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
-      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <Image />
-      </div>
-      {Posts}
+      <section class="text-gray-700 body-font overflow-hidden">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="-my-8">
+            {Posts}
+          </div>
+        </div>
+      </section>
       <Utterances />
     </Layout>
   );
@@ -38,9 +37,10 @@ export const query = graphql`
       edges {
         node {
           id
-          excerpt(pruneLength: 250)
+          excerpt(format: PLAIN, pruneLength: 250)
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            category
+            date(formatString: "YYYY-MM-DD, YYYY")
             slug
             title
           }
