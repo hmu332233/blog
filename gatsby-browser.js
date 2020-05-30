@@ -6,4 +6,5 @@
 
 // You can delete this file if you're not using it
 
-require('typeface-noto-sans-kr');
+import 'typeface-noto-sans-kr';
+import './src/styles/global.scss';
