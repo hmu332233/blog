@@ -66,10 +66,10 @@ module.exports = {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {
-          components: 'src/components',
-          pages: 'src/pages',
+          '@components': 'src/components',
+          '@pages': 'src/pages',
         },
-        extensions: ['js'],
+        extensions: ['js', 'jsx'],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
