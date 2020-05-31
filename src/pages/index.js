@@ -1,10 +1,10 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import Layout from '../components/Layout';
-import SEO from '../components/seo';
-import PostLink from '../components/PostLink';
-import Utterances from '../components/Utterances';
+import Layout from 'components/Layout';
+import SEO from 'components/seo';
+import PostLink from 'components/PostLink';
+import Utterances from 'components/Utterances';
 
 const IndexPage = ({
   data: {
@@ -40,7 +40,7 @@ export const query = graphql`
           excerpt(format: PLAIN, pruneLength: 250)
           frontmatter {
             category
-            date(formatString: "YYYY-MM-DD, YYYY")
+            date(formatString: "YYYY-MM-DD")
             slug
             title
           }
