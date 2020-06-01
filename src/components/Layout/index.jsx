@@ -28,8 +28,7 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}.
-          {` `}
+          © {new Date().getFullYear()}.{` `}
           minung.han
         </footer>
       </div>
