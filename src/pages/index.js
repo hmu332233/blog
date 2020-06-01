@@ -17,11 +17,7 @@ const IndexPage = ({
   return (
     <Layout>
       <SEO title="Home" />
-      <section class="text-gray-700 body-font overflow-hidden">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="-my-8">{Posts}</div>
-        </div>
-      </section>
+      <div class="-my-8">{Posts}</div>
       <Utterances />
     </Layout>
   );

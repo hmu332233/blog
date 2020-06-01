@@ -9,7 +9,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import Header from '../Header';
+import Header from '@components/Header';
+import Footer from '@components/Footer';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,13 +26,12 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div>
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}.{` `}
-          minung.han
-        </footer>
-      </div>
+      <main>
+        <section className="text-gray-700 body-font overflow-hidden">
+          <div className="container px-5 py-24 mx-auto">{children}</div>
+        </section>
+      </main>
+      <Footer />
     </>
   );
 };
