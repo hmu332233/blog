@@ -4,7 +4,6 @@ import { graphql } from 'gatsby';
 import Layout from '@components/Layout';
 import SEO from '@components/Seo';
 import PostLink from '@components/PostLink';
-import Utterances from '@components/Utterances';
 
 const IndexPage = ({
   data: {
@@ -18,7 +17,6 @@ const IndexPage = ({
     <Layout>
       <SEO title="Home" />
       <div class="-my-8">{Posts}</div>
-      <Utterances />
     </Layout>
   );
 };
