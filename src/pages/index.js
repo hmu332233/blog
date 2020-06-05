@@ -32,7 +32,7 @@ export const query = graphql`
           excerpt(format: PLAIN, pruneLength: 250)
           frontmatter {
             category
-            date(formatString: "YYYY-MM-DD")
+            date(formatString: "MMMM DD, YYYY")
             slug
             title
           }

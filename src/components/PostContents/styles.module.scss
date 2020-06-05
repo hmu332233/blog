@@ -500,6 +500,9 @@
   li {
     margin-bottom: calc(0.8125rem / 2);
   }
+  ol, ul {
+    list-style: unset;
+  }
   ol li {
     padding-left: 0;
   }

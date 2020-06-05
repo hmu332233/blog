@@ -7,6 +7,7 @@ import classNames from 'classnames';
 
 function PostLink({ post, row }) {
   return (
+    <Link to={post.frontmatter.slug}>
     <div className={classNames('py-8 flex flex-col border-t-2', row && 'md:flex-row')}>
       <div className={classNames('mb-6 flex-shrink-0 flex flex-col', row && 'md:w-64 md:mb-0')}>
         <span className="tracking-widest font-medium title-font text-gray-900 uppercase">{post.frontmatter.category}</span>
@@ -15,15 +16,13 @@ function PostLink({ post, row }) {
       <div className={classNames(row && 'md:flex-grow')}>
         <h2 className="text-2xl font-medium text-gray-900 title-font mb-2 mt-0 border-0">{post.frontmatter.title}</h2>
         <p className="leading-relaxed">{post.excerpt}</p>
-        <Link className="text-blue-500 inline-flex items-center mt-4" to={post.frontmatter.slug}>
-          Learn More
-          <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M5 12h14"></path>
-            <path d="M12 5l7 7-7 7"></path>
-          </svg>
-        </Link>
+        
+         
+        
       </div>
+
     </div>
+    </Link>
   );
 }
 
