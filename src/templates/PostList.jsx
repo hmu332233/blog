@@ -1,26 +1,21 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import SEO from '@containers/Seo';
+import PostListPage from '@components/Pages/PostListPage';
 
-import Layout from '@components/Layout';
-import PostLink from '@components/PostLink';
-import CategoryList from '@containers/CategoryList';
-
-const PostList = ({
-  data: {
-    allMarkdownRemark: { edges },
-  },
-}) => {
-  const Posts = edges
-    .filter((edge) => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-    .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
+function PostList(props) {
+  const { data: { allMarkdownRemark: { edges } } } = props;
+  const posts = edges.map(edge => ({
+    id: edge.node.id,
+    title: edge.node.frontmatter.title,
+    contents: edge.node.excerpt,
+    category: edge.node.frontmatter.category,
+    link: edge.node.frontmatter.slug,
+  }));
   return (
-    <Layout>
-      <SEO title="Home" />
-      <CategoryList />
-      {Posts}
-    </Layout>
+    <PostListPage
+      posts={posts}
+    />
   );
 };
 

@@ -1,31 +1,24 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import SEO from '@containers/Seo';
+import PostPage from '@components/Pages/PostPage';
 
-import Layout from '@components/Layout';
-import Utterances from '@components/Utterances';
-import PostHeader from '@components/PostHeader';
-import PostContents from '@components/PostContents';
-
-export default function Template({
-  data, // this prop will be injected by the GraphQL query below.
-}) {
-  const { markdownRemark, excerpt } = data; // data.markdownRemark holds your post data
+function Post(props) {
+  const { data } = props;
+  const { markdownRemark, excerpt } = data;
   const { frontmatter: { title, date, category }, html } = markdownRemark;
-  console.log(excerpt)
   return (
-    <Layout>
-      <SEO
-        title={title}
-        description={excerpt}
-      />
-      <PostHeader title={title} date={date} category={category} />
-      <PostContents html={html} />
-      <Utterances />
-    </Layout>
+    <PostPage
+      title={title}
+      contents={html}
+      date={date}
+      category={category}
+      seoDescription={excerpt}
+    />
   );
-}
+};
+
+export default Post;
 
 export const pageQuery = graphql`
   query($slug: String!) {

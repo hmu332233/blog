@@ -1,25 +1,22 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import CategoryList from '@containers/CategoryList';
-import SEO from '@containers/Seo';
+import PostListPage from '@components/Pages/PostListPage';
 
-import Layout from '@components/Layout';
-import PostLink from '@components/PostLink';
-
-const IndexPage = ({
-  data: {
-    allMarkdownRemark: { edges },
-  },
-}) => {
+function IndexPage(props) {
+  const { data: { allMarkdownRemark: { edges } } } = props;
+  const posts = edges.map(edge => ({
+    id: edge.node.id,
+    title: edge.node.frontmatter.title,
+    contents: edge.node.excerpt,
+    category: edge.node.frontmatter.category,
+    link: edge.node.frontmatter.slug,
+  }));
   
-  const Posts = edges.map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
   return (
-    <Layout>
-      <SEO title="Home" />
-      <CategoryList />
-      {Posts}
-    </Layout>
+    <PostListPage
+      posts={posts}
+    />
   );
 };
 
