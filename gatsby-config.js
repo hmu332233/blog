@@ -38,7 +38,7 @@ module.exports = {
       options: {
         postCssPlugins: [
           require('tailwindcss'),
-          // require("./tailwind.config.js"), // Optional: Load custom Tailwind CSS configuration
+          require('./tailwind.config.js'),
         ],
       },
     },
@@ -66,6 +66,7 @@ module.exports = {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {
+          '@containers': 'src/containers',
           '@components': 'src/components',
           '@pages': 'src/pages',
           '@utils': 'src/utils',
