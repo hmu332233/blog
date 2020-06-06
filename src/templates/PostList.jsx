@@ -1,8 +1,9 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
+import SEO from '@containers/Seo';
+
 import Layout from '@components/Layout';
-import SEO from '@components/Seo';
 import PostLink from '@components/PostLink';
 import CategoryList from '@containers/CategoryList';
 

@@ -1,8 +1,9 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
+import SEO from '@containers/Seo';
+
 import Layout from '@components/Layout';
-import SEO from '@components/Seo';
 import Utterances from '@components/Utterances';
 import PostHeader from '@components/PostHeader';
 import PostContents from '@components/PostContents';

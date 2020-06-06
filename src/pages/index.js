@@ -1,10 +1,11 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import Layout from '@components/Layout';
-import SEO from '@components/Seo';
-import PostLink from '@components/PostLink';
 import CategoryList from '@containers/CategoryList';
+import SEO from '@containers/Seo';
+
+import Layout from '@components/Layout';
+import PostLink from '@components/PostLink';
 
 const IndexPage = ({
   data: {
