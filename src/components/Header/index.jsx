@@ -10,7 +10,7 @@ function Header(props) {
   return (
     <header className={classNames('text-gray-700 body-font', styles.Header)}>
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <Link className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" to="/">
+        <Link className="flex title-font font-black items-center text-gray-900 mb-4 md:mb-0" to="/">
           <span className="ml-3 text-xl">{props.siteTitle}</span>
         </Link>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
