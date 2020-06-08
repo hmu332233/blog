@@ -6,6 +6,7 @@ import Layout from '@components/Layout';
 import Utterances from '@components/Utterances';
 import PostHeader from '@components/PostHeader';
 import PostContents from '@components/PostContents';
+import Profile from '@containers/Profile';
 
 function PostPage(props) {
   return (
@@ -13,6 +14,7 @@ function PostPage(props) {
       <SEO title={props.title} description={props.description} />
       <PostHeader title={props.title} date={props.date} category={props.category} />
       <PostContents html={props.contents} />
+      <Profile />
       <Utterances />
     </Layout>
   );
