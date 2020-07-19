@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>
         <section className="text-gray-700 body-font overflow-hidden">
@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
         </section>
       </main>
       <Footer />
-    </>
+    </div>
   );
 };
 
