@@ -60,6 +60,10 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `naver-site-verification`,
+          content: `cd3112d8065d74fe4d258e2d4e862423628870ed`,
+        },
       ].concat(meta)}
     />
   );
