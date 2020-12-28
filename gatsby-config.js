@@ -48,6 +48,13 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-minify-classnames`,
+      options: {
+        dictionary: 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ0123456789',
+        enableOnDevelopment: false,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
