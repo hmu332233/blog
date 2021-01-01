@@ -60,8 +60,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `minung--dev-log`,
+        short_name: `blog`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
