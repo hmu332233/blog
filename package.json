@@ -26,7 +26,7 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^6.0.0",
     "react-typography": "^0.16.19",
-    "tailwindcss": "^1.4.6",
+    "tailwindcss": "^2.0.2",
     "typeface-noto-sans-kr": "^0.0.63",
     "typography": "^0.16.19",
     "typography-theme-github": "^0.16.19"
