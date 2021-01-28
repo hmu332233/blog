@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://blog-new.minung.dev`,
     title: `minung--dev-logs`,
     description: `minung--dev-logs`,
     author: `minung.han`,
@@ -7,10 +8,11 @@ module.exports = {
       image: `https://avatars2.githubusercontent.com/u/10302969?v=4?v=3&s=88`,
       name: `minung.han`,
       description: `내가 쓰기 위해 만드는 자급자족 사이드 프로젝트를 즐겨합니다.`,
-      github: 'https://github.com/hmu332233',  
+      github: `https://github.com/hmu332233`,
     }
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
