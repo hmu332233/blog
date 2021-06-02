@@ -8,7 +8,7 @@ function CategoryList(props) {
   return (
     <div className={classNames('flex', props.className)}>
       {props.categories.map(({ text, link }) => (
-        <Category link={link} text={text} />
+        <Category key={link} link={link} text={text} />
       ))}
     </div>
   );
