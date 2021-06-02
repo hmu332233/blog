@@ -30,9 +30,7 @@
     "react-helmet": "^6.0.0",
     "react-typography": "^0.16.19",
     "tailwindcss": "^2.1.2",
-    "typeface-noto-sans-kr": "^1.1.13",
-    "typography": "^0.16.19",
-    "typography-theme-github": "^0.16.19"
+    "typeface-noto-sans-kr": "^1.1.13"
   },
   "devDependencies": {
     "prettier": "2.3.0"
