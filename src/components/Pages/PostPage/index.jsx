@@ -7,14 +7,20 @@ import Utterances from '@components/Utterances';
 import PostHeader from '@components/PostHeader';
 import PostContents from '@components/PostContents';
 import Profile from '@containers/Profile';
+import PostNavigator from '@components/PostNavigator';
 
 function PostPage(props) {
   return (
     <Layout>
       <SEO title={props.title} description={props.description} />
-      <PostHeader title={props.title} date={props.date} category={props.category} />
+      <PostHeader
+        title={props.title}
+        date={props.date}
+        category={props.category}
+      />
       <PostContents html={props.contents} />
       <Profile />
+      <PostNavigator previous={props.previous} next={props.next} />
       <Utterances />
     </Layout>
   );

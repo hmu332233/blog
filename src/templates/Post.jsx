@@ -6,7 +6,11 @@ import PostPage from '@components/Pages/PostPage';
 function Post(props) {
   const { data } = props;
   const { markdownRemark, excerpt } = data;
-  const { frontmatter: { title, date, category }, html } = markdownRemark;
+  const {
+    frontmatter: { title, date, category },
+    html,
+  } = markdownRemark;
+  const { previous, next } = props.pageContext;
   return (
     <PostPage
       title={title}
@@ -14,14 +18,16 @@ function Post(props) {
       date={date}
       category={category}
       seoDescription={excerpt}
+      previous={previous}
+      next={next}
     />
   );
-};
+}
 
 export default Post;
 
 export const pageQuery = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       excerpt
       html
