@@ -9,6 +9,18 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               slug
             }
           }
+          previous {
+            frontmatter {
+              title
+              slug
+            }
+          }
+          next {
+            frontmatter {
+              title
+              slug
+            }
+          }
         }
       }
 
@@ -27,12 +39,24 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
 
   // post page
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  result.data.allMarkdownRemark.edges.forEach(({ node, previous, next }) => {
     createPage({
       path: node.frontmatter.slug,
       component: require.resolve(`./src/templates/Post.jsx`),
       context: {
         slug: node.frontmatter.slug,
+        ...(next && {
+          previous: {
+            title: next?.frontmatter.title,
+            slug: next?.frontmatter.slug,
+          },
+        }),
+        ...(previous && {
+          next: {
+            title: previous.frontmatter.title,
+            slug: previous.frontmatter.slug,
+          },
+        }),
       },
     });
   });
