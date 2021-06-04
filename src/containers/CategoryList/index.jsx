@@ -22,12 +22,10 @@ function CategoryListContainer() {
       text: 'all',
       link: '/',
     },
-    ...allMarkdownRemark.group.map(({ category }) => (
-      {
-        text: category,
-        link: `/category/${category}`,
-      }
-     ))
+    ...allMarkdownRemark.group.map(({ category }) => ({
+      text: category,
+      link: `/category/${category}`,
+    })),
   ];
   return <CategoryList categories={categories} />;
 }

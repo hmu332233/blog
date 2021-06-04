@@ -25,7 +25,14 @@ function ProfileContainer(props) {
       siteMetadata: { profile },
     },
   } = useStaticQuery(query);
-  return <Profile image={profile.image} name={profile.name} description={profile.description} github={profile.github} />;
+  return (
+    <Profile
+      image={profile.image}
+      name={profile.name}
+      description={profile.description}
+      github={profile.github}
+    />
+  );
 }
 
 export default ProfileContainer;

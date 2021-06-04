@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-
 import SEO from '@containers/Seo';
 
 import Layout from '@components/Layout';
@@ -13,7 +12,7 @@ function PostListPage(props) {
     <Layout>
       <SEO title={props.title} description={props.seoDescription} />
       <CategoryList />
-      {props.posts.map(post => (
+      {props.posts.map((post) => (
         <PostLink
           key={post.id}
           title={post.title}

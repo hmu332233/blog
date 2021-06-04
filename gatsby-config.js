@@ -9,7 +9,7 @@ module.exports = {
       name: `minung.han`,
       description: `내가 쓰기 위해 만드는 자급자족 사이드 프로젝트를 즐겨합니다.`,
       github: `https://github.com/hmu332233`,
-    }
+    },
   },
   plugins: [
     `gatsby-plugin-sitemap`,
@@ -18,7 +18,7 @@ module.exports = {
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
-          "G-7J4V8XW5JH", // Google Analytics / GA
+          'G-7J4V8XW5JH', // Google Analytics / GA
         ],
       },
     },

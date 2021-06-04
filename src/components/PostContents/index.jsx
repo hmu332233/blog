@@ -6,7 +6,10 @@ import classNames from 'classnames';
 
 function PostContents(props) {
   return (
-    <div className={classNames(styles.PostContents, 'leading-relaxed')} dangerouslySetInnerHTML={{ __html: props.html }} />
+    <div
+      className={classNames(styles.PostContents, 'leading-relaxed')}
+      dangerouslySetInnerHTML={{ __html: props.html }}
+    />
   );
 }
 
