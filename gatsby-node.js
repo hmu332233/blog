@@ -50,8 +50,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         slug: node.frontmatter.slug,
         ...(next && {
           previous: {
-            title: next?.frontmatter.title,
-            slug: next?.frontmatter.slug,
+            title: next.frontmatter.title,
+            slug: next.frontmatter.slug,
           },
         }),
         ...(previous && {
