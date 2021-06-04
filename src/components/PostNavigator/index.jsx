@@ -21,7 +21,7 @@ const LinkButton = (props) => {
 
 function PostNavigator(props) {
   return (
-    <div className="flex w-100">
+    <div className="flex mt-4 mb-4">
       {props.previous && (
         <LinkButton to={props.previous.slug}>
           ← {props.previous.title}
