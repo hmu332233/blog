@@ -37,14 +37,14 @@ function PostNavigator(props) {
 }
 
 PostNavigator.propTypes = {
-  previous: {
+  previous: PropTypes.shape({
     title: PropTypes.string,
     slug: PropTypes.string,
-  },
-  next: {
+  }),
+  next: PropTypes.shape({
     title: PropTypes.string,
     slug: PropTypes.string,
-  },
+  }),
 };
 PostNavigator.defaultProps = {};
 

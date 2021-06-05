@@ -8,6 +8,7 @@ import PostHeader from '@components/PostHeader';
 import PostContents from '@components/PostContents';
 import Profile from '@containers/Profile';
 import PostNavigator from '@components/PostNavigator';
+import PostContentsNavigator from '@components/PostContentsNavigator';
 
 function PostPage(props) {
   return (
@@ -18,6 +19,9 @@ function PostPage(props) {
         date={props.date}
         category={props.category}
       />
+      <PostContentsNavigator.Wrapper>
+        <PostContentsNavigator.Navigator links={props.links} />
+      </PostContentsNavigator.Wrapper>
       <PostContents html={props.contents} />
       <Profile />
       <PostNavigator previous={props.previous} next={props.next} />

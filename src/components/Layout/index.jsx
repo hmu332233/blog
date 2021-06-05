@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
     <div className="flex flex-col min-h-screen">
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>
-        <section className="text-gray-700 body-font overflow-hidden">
+        <section className="text-gray-700 body-font">
           <div className="container flex flex-col px-5 py-24 mx-auto max-w-screen-sm">
             {children}
           </div>

@@ -9,7 +9,9 @@ function Post(props) {
   const {
     frontmatter: { title, date, category },
     html,
+    headings,
   } = markdownRemark;
+
   const { previous, next } = props.pageContext;
   return (
     <PostPage
@@ -18,6 +20,7 @@ function Post(props) {
       date={date}
       category={category}
       seoDescription={excerpt}
+      links={headings}
       previous={previous}
       next={next}
     />
@@ -36,6 +39,10 @@ export const pageQuery = graphql`
         slug
         title
         category
+      }
+      headings {
+        id
+        value
       }
     }
   }
