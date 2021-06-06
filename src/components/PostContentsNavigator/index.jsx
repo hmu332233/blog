@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
 import * as styles from './styles.module.scss';
@@ -19,14 +19,39 @@ function Wrapper(props) {
 }
 
 function Navigator(props) {
+  const [activeLinkIndex, setActiveLinkIndex] = useState(0);
+
+  useEffect(() => {
+    const linkTops = props.links.map(link => {
+      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      const element = document.getElementById(link.id);
+      return element.getBoundingClientRect().top + scrollTop;
+    });
+
+    const onScroll = () => {
+      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      const currentLinkIndex = linkTops.findIndex(linkTop => linkTop > scrollTop - 5);
+      
+      if (currentLinkIndex > -1) {
+        setActiveLinkIndex(currentLinkIndex)
+      } else {
+        setActiveLinkIndex(props.links.length - 1);
+      }
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [props.links]);
+  
+
   return (
     <div
       className={classNames(styles.Navigator, props.className, 'flex flex-col')}
     >
-      {props.links.map((link) => (
+      {props.links.map((link, index) => (
         <a
           key={link.id}
-          className="text-gray-500 hover:text-gray-900"
+          className={classNames('text-gray-500 hover:text-gray-900', activeLinkIndex === index && 'font-bold text-gray-900')}
           href={`#${link.id}`}
         >
           {link.value}
