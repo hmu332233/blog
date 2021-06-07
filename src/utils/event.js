@@ -9,6 +9,6 @@ export const optimizeScroll = (callback) => {
         ticking = false;
       });
       ticking = true;
-    };
-  }
+    }
+  };
 };
