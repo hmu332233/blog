@@ -5,6 +5,8 @@ import * as styles from './styles.module.scss';
 
 import classNames from 'classnames';
 
+import { optimizeScroll } from '@utils/event';
+
 function Wrapper(props) {
   const childrenWithProps = React.Children.map(props.children, (child) => {
     if (React.isValidElement(child)) {
@@ -28,7 +30,7 @@ function Navigator(props) {
       return element.getBoundingClientRect().top + scrollTop;
     });
 
-    const onScroll = () => {
+    const onScroll = optimizeScroll(() => {
       const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
       const currentLinkIndex = linkTops.findIndex(linkTop => linkTop > scrollTop - 5);
       
@@ -37,7 +39,7 @@ function Navigator(props) {
       } else {
         setActiveLinkIndex(props.links.length - 1);
       }
-    }
+    });
 
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
