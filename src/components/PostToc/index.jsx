@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
-import * as styles from './styles.module.scss';
-
 import classNames from 'classnames';
 
 import { optimizeScroll } from '@utils/event';
@@ -50,7 +48,7 @@ function List(props) {
   }, [props.links]);
 
   return (
-    <div className={classNames(styles.List, props.className, 'flex flex-col')}>
+    <div className={classNames(props.className, 'w-40 hidden lg:flex lg:flex-col')}>
       {props.links.map((link, index) => (
         <a
           key={link.id}
