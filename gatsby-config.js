@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
+    githubLink: `https://github.com/hmu332233/blog`,
     siteUrl: `https://blog-new.minung.dev`,
     title: `minung--dev-logs`,
-    description: `minung--dev-logs`,
+    description: `1년에 한번은 회고를 쓰기 위해 돌아오는 블로그입니다.`,
     author: `minung.han`,
     profile: {
       image: `https://avatars2.githubusercontent.com/u/10302969?v=4?v=3&s=88`,
@@ -10,6 +11,7 @@ module.exports = {
       description: `내가 쓰기 위해 만드는 자급자족 사이드 프로젝트를 즐겨합니다.`,
       github: `https://github.com/hmu332233`,
     },
+    utterances: `hmu332233/utterances.blog`,
   },
   plugins: [
     `gatsby-plugin-sitemap`,

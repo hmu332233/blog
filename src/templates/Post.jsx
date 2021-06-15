@@ -5,7 +5,13 @@ import PostPage from '@components/Pages/PostPage';
 
 function Post(props) {
   const { data } = props;
-  const { markdownRemark, excerpt } = data;
+  const {
+    markdownRemark,
+    excerpt,
+    site: {
+      siteMetadata: { utterances },
+    },
+  } = data;
   const {
     frontmatter: { title, date, category },
     html,
@@ -21,6 +27,7 @@ function Post(props) {
       category={category}
       seoDescription={excerpt}
       links={headings}
+      utterances={utterances}
       previous={previous}
       next={next}
     />
@@ -31,6 +38,11 @@ export default Post;
 
 export const pageQuery = graphql`
   query ($slug: String!) {
+    site {
+      siteMetadata {
+        utterances
+      }
+    }
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       excerpt
       html

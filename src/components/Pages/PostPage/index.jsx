@@ -25,7 +25,7 @@ function PostPage(props) {
       <PostContents html={props.contents} />
       <Profile />
       <PostNavigator previous={props.previous} next={props.next} />
-      <Utterances />
+      {props.utterances && <Utterances repo={props.utterances} />}
     </Layout>
   );
 }
@@ -36,6 +36,7 @@ PostPage.propTypes = {
   date: PropTypes.string,
   category: PropTypes.string,
   seoDescription: PropTypes.string,
+  utterances: PropTypes.string,
 };
 PostPage.defaultProps = {};
 

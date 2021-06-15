@@ -1,18 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Footer(props) {
+function Footer({ author, githubLink }) {
   return (
     <footer className="mt-auto text-gray-700 body-font">
       <div className="bg-gray-200">
-        <div className="container mx-auto py-4 px-5 flex flex-wrap items-center flex-col sm:flex-row">
-          <p className="text-gray-500 text-sm text-center sm:text-left mb-0">
-            © 2020 minung.han
-          </p>
-          <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        <div className="container mx-auto py-4 px-5 flex flex-wrap justify-between items-center flex-col sm:flex-row">
+          <span className="text-gray-500 text-sm text-center ">© {author}</span>
+          <span className="sm:mt-0 mt-1 text-gray-500 text-sm text-center">
+            Built with{' '}
+            <a
+              href="https://github.com/hmu332233/gatsby-starter-minung"
+              target="_blank"
+            >
+              Gatsby-starter-minung
+            </a>
+          </span>
+          <span className="flex sm:mt-0 mt-2 justify-center">
             <a
               className="text-gray-500 flex items-center"
-              href="https://github.com/hmu332233/blog"
+              href={githubLink}
               target="_blank"
             >
               <svg
@@ -32,7 +39,13 @@ function Footer(props) {
   );
 }
 
-Footer.propTypes = {};
-Footer.defaultProps = {};
+Footer.propTypes = {
+  author: PropTypes.string,
+  githubLink: PropTypes.string,
+};
+Footer.defaultProps = {
+  author: 'minung.han',
+  githubLink: 'https://github.com/hmu332233/gatsby-starter-minung',
+};
 
 export default Footer;
