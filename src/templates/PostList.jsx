@@ -24,7 +24,7 @@ export default PostList;
 export const query = graphql`
   query ($category: String!) {
     allMarkdownRemark(
-      filter: { frontmatter: { category: { eq: $category } } }
+      filter: { frontmatter: { category: { eq: $category }, about: { ne: true } } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
