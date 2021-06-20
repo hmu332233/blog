@@ -42,7 +42,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return;
   }
 
-  
   // post page
   result.data.allMarkdownRemark.edges.forEach(({ node, previous, next }) => {
     createPage({
