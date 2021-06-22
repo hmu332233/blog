@@ -8,8 +8,8 @@ import Profile from '@containers/Profile';
 function AboutPage({ contents }) {
   return (
     <Layout>
-      <PostContents html={contents} />
       <Profile />
+      <PostContents html={contents} />
     </Layout>
   );
 }
