@@ -48,7 +48,9 @@ function List(props) {
   }, [props.links]);
 
   return (
-    <div className={classNames(props.className, 'w-40 hidden lg:flex lg:flex-col')}>
+    <div
+      className={classNames(props.className, 'w-40 hidden lg:flex lg:flex-col')}
+    >
       {props.links.map((link, index) => (
         <a
           key={link.id}

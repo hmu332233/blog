@@ -8,15 +8,10 @@ function IndexPage({
     allMarkdownRemark: { edges },
   },
 }) {
-
   const {
     html,
-    frontmatter: {
-      title,
-      description,
-    },
+    frontmatter: { title, description },
   } = edges[0].node;
-
 
   return <AboutPage title={title} description={description} contents={html} />;
 }
