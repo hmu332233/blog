@@ -3,15 +3,22 @@ import { graphql } from 'gatsby';
 
 import AboutPage from '@components/Pages/AboutPage';
 
-function IndexPage(props) {
+function IndexPage({
+  data: {
+    allMarkdownRemark: { edges },
+  },
+}) {
+
   const {
-    data: {
-      allMarkdownRemark: { edges },
+    html,
+    frontmatter: {
+      title,
+      description,
     },
-  } = props;
+  } = edges[0].node;
 
 
-  return <AboutPage contents={edges[0].node.html} />;
+  return <AboutPage title={title} description={description} contents={html} />;
 }
 
 export default IndexPage;
@@ -26,6 +33,10 @@ export const query = graphql`
         node {
           id
           html
+          frontmatter {
+            title
+            description
+          }
         }
       }
     }

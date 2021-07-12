@@ -1,6 +1,8 @@
 ---
 about: true
 date: '2021-06-18'
+title: 'About Minung'
+description: '안녕하세요. 웹 엔지니어 한민웅입니다!'
 ---
 
 # About Me
