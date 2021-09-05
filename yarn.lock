@@ -1402,6 +1402,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.14.8":
+  version: 7.15.4
+  resolution: "@babel/runtime@npm:7.15.4"
+  dependencies:
+    regenerator-runtime: ^0.13.4
+  checksum: 64b6c250fd02a664f40835b7bfc3ec0b473d251bf4881b06b689b60662bf2ae17adc6fa32fb0e0de308de5d4bc383738c6030ad93d823066fb9fd7c18f552b56
+  languageName: node
+  linkType: hard
+
 "@babel/standalone@npm:^7.14.0":
   version: 7.14.6
   resolution: "@babel/standalone@npm:7.14.6"
@@ -2654,7 +2663,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^15.0.1":
+"@types/node@npm:*":
   version: 15.12.4
   resolution: "@types/node@npm:15.12.4"
   checksum: 64b121a7e805379382aeb3eefed56c4c34f1ebf5e818ba2c732e43beebc4fbde20be438f3eaaffd8dba5062f0e0c9ae085127b7239906d170eda816885a6c508
@@ -2665,6 +2674,13 @@ __metadata:
   version: 14.17.3
   resolution: "@types/node@npm:14.17.3"
   checksum: 0d3e3c3dbb8250166d7c8c7c6221bde20a366d2c34b27c0072c3962a32c8a74c4ae4a168bfe53d6193e7b0bba8d8bc87608a6fd2af7918cd444a9aa699b4ce18
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^15.0.1":
+  version: 15.14.9
+  resolution: "@types/node@npm:15.14.9"
+  checksum: 4ffd4b5f5a6880658fa81b248458c2ac8ed91589df65979e1f4b09edc83c1f8dbe293329bd29e738a808097e7aa1cb61d0fb8f4ffd06c3fa6990b37500737aba
   languageName: node
   linkType: hard
 
@@ -2760,11 +2776,11 @@ __metadata:
   linkType: hard
 
 "@types/sax@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "@types/sax@npm:1.2.1"
+  version: 1.2.3
+  resolution: "@types/sax@npm:1.2.3"
   dependencies:
     "@types/node": "*"
-  checksum: 99f2c89dd69b53136d6ffdd4bc431ef2e1cdf29ac2b5c67bb3ec09c12814b5440e85fe3d31562774ad093d3631cf0660b6e5443c70f8654dd7d4ef3a797a0964
+  checksum: 1c8096a450af626f63ed4efe849df3e5169a0872419a06bedf02125c859c7a12c1133db0e26a5be3b5d1db0888a82e38bdf6584e6b748b42126ff02c2ebc01c9
   languageName: node
   linkType: hard
 
@@ -4189,7 +4205,7 @@ __metadata:
     gatsby-plugin-react-helmet: ^4.8.0
     gatsby-plugin-sass: ^4.8.0
     gatsby-plugin-sharp: ^3.8.0
-    gatsby-plugin-sitemap: ^4.4.0
+    gatsby-plugin-sitemap: ^4.9.0
     gatsby-plugin-typography: ^3.8.0
     gatsby-remark-autolink-headers: ^4.5.0
     gatsby-remark-images: ^5.5.0
@@ -8395,11 +8411,11 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sitemap@npm:^4.4.0":
-  version: 4.4.0
-  resolution: "gatsby-plugin-sitemap@npm:4.4.0"
+"gatsby-plugin-sitemap@npm:^4.9.0":
+  version: 4.9.0
+  resolution: "gatsby-plugin-sitemap@npm:4.9.0"
   dependencies:
-    "@babel/runtime": ^7.14.0
+    "@babel/runtime": ^7.14.8
     common-tags: ^1.8.0
     minimatch: ^3.0.4
     sitemap: ^7.0.0
@@ -8407,7 +8423,7 @@ fsevents@~2.3.2:
     gatsby: ^3.0.0-next.0
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: 800760bf2351986122c3accb15715331b30ad2fb6abc24ff816457b029c6c2ae42d7fcd01ae10009c2ca197ee1c323677b94fc62e9be4f6ddab7f4715184e4e7
+  checksum: d19df43c3514a003fa76398c4154f0cafaa2bb465839291122c5ab11d9d4577791d2811ae95e714d3ad8c9b0f0610b0a1334a5263c7baaf8177d233876befe92
   languageName: node
   linkType: hard
 
