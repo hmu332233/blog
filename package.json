@@ -17,7 +17,7 @@
     "gatsby-plugin-sharp": "^3.8.0",
     "gatsby-plugin-sitemap": "^4.9.0",
     "gatsby-plugin-typography": "^3.8.0",
-    "gatsby-remark-autolink-headers": "^4.5.0",
+    "gatsby-remark-autolink-headers": "^4.10.0",
     "gatsby-remark-images": "^5.5.0",
     "gatsby-remark-prismjs": "^5.5.0",
     "gatsby-source-filesystem": "^3.8.0",
