@@ -34,7 +34,7 @@
     "typeface-noto-sans-kr": "^1.1.13"
   },
   "devDependencies": {
-    "husky": "^7.0.0",
+    "husky": "^7.0.2",
     "lint-staged": "^11.0.0",
     "pinst": "^2.0.0",
     "prettier": "2.3.2"
