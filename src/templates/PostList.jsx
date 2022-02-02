@@ -32,13 +32,13 @@ export const query = graphql`
       edges {
         node {
           id
-          excerpt(format: PLAIN, pruneLength: 250)
           frontmatter {
             category
             date(formatString: "MMMM DD, YYYY")
             slug
             title
           }
+          excerpt(truncate: true, pruneLength: 250, format: PLAIN)
         }
       }
     }
