@@ -1,5 +1,5 @@
 ---
-about: true
+notPost: true
 contribute: true
 title: 'Contribution'
 description: '다른 사람의 repo에 머지된 적이 있는 pr과 그 히스토리 기록'
