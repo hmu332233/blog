@@ -25,7 +25,7 @@ export default IndexPage;
 export const query = graphql`
   query {
     allMarkdownRemark(
-      filter: { frontmatter: { about: { ne: true } } }
+      filter: { frontmatter: { notPost: { ne: true } } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
