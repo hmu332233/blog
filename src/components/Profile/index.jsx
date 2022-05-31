@@ -6,8 +6,8 @@ function Profile(props) {
     <div className="flex first:mt-0 mt-10 mb-8">
       <img className="h-16 w-16 rounded-full" src={props.image} />
       <div className="ml-4">
-        <h2 className="font-medium">{props.name}</h2>
-        <div className="text-sm text-gray-600">{props.description}</div>
+        <h2 className="text-xl font-bold">{props.name}</h2>
+        <div className="text-gray-600">{props.description}</div>
       </div>
     </div>
   );
