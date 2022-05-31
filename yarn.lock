@@ -4304,7 +4304,6 @@ __metadata:
     react-helmet: ^6.0.0
     react-typography: ^0.16.19
     tailwindcss: ^3.0.23
-    typeface-noto-sans-kr: ^1.1.13
   languageName: unknown
   linkType: soft
 
@@ -18088,13 +18087,6 @@ resolve@^2.0.0-next.3:
   version: 0.0.6
   resolution: "typedarray@npm:0.0.6"
   checksum: 33b39f3d0e8463985eeaeeacc3cb2e28bc3dfaf2a5ed219628c0b629d5d7b810b0eb2165f9f607c34871d5daa92ba1dc69f49051cf7d578b4cbd26c340b9d1b1
-  languageName: node
-  linkType: hard
-
-"typeface-noto-sans-kr@npm:^1.1.13":
-  version: 1.1.13
-  resolution: "typeface-noto-sans-kr@npm:1.1.13"
-  checksum: b9103955e74e8905f3fa6ae7e474d59e94110fe5f48eecc9181c62c68bc19e6e398b62c66a134e447f9392f548398b693cfcef02c1a90791683b4ca2e9ce0cdf
   languageName: node
   linkType: hard
 
