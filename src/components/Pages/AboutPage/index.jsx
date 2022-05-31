@@ -11,7 +11,7 @@ function AboutPage({ title, description, contents }) {
     <Layout>
       <Seo title={title} description={description} />
       <Profile />
-      <PostContents html={contents} />
+      <PostContents html={contents} lg />
     </Layout>
   );
 }

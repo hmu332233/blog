@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import * as styles from './styles.module.scss';
 
 import classNames from 'classnames';
 
 function PostContents(props) {
   return (
     <article
-      className={classNames('prose')}
+      className={classNames('prose', props.lg && 'md:prose-lg')}
       dangerouslySetInnerHTML={{ __html: props.html }}
     />
   );
@@ -15,6 +14,7 @@ function PostContents(props) {
 
 PostContents.propTypes = {
   html: PropTypes.string,
+  lg: PropTypes.bool,
 };
 PostContents.defaultProps = {
   html: '',
