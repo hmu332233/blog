@@ -14,7 +14,7 @@ function Header(props) {
           className="flex title-font font-black items-center text-gray-900 mb-4 md:mb-0"
           to="/"
         >
-          <span className="ml-3 text-xl">{props.siteTitle}</span>
+          <span className="ml-3 text-2xl">{props.siteTitle}</span>
         </Link>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
           <Link className="mr-5 hover:text-gray-900" to="/about">
