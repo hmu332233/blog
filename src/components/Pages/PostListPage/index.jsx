@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import SEO from '@containers/Seo';
+import Seo from '@containers/Seo';
 
 import Layout from '@components/Layout';
 import PostLink from '@components/PostLink';
@@ -10,7 +10,7 @@ import CategoryList from '@containers/CategoryList';
 function PostListPage(props) {
   return (
     <Layout>
-      <SEO title={props.title} description={props.seoDescription} />
+      <Seo title={props.title} description={props.seoDescription} />
       <CategoryList />
       {props.posts.map((post) => (
         <PostLink

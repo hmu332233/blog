@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import SEO from '@containers/Seo';
+import Seo from '@containers/Seo';
 import Layout from '@components/Layout';
 import Utterances from '@components/Utterances';
 import PostHeader from '@components/PostHeader';
@@ -13,7 +13,7 @@ import PostToc from '@components/PostToc';
 function PostPage(props) {
   return (
     <Layout>
-      <SEO title={props.title} description={props.description} />
+      <Seo title={props.title} description={props.description} />
       <PostHeader
         title={props.title}
         date={props.date}
