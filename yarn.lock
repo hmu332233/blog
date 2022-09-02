@@ -1452,6 +1452,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.12.5":
+  version: 7.18.9
+  resolution: "@babel/runtime@npm:7.18.9"
+  dependencies:
+    regenerator-runtime: ^0.13.4
+  checksum: 36dd736baba7164e82b3cc9d43e081f0cb2d05ff867ad39cac515d99546cee75b7f782018b02a3dcf5f2ef3d27f319faa68965fdfec49d4912c60c6002353a2e
+  languageName: node
+  linkType: hard
+
 "@babel/standalone@npm:^7.15.5":
   version: 7.18.7
   resolution: "@babel/standalone@npm:7.18.7"
@@ -2468,6 +2477,40 @@ __metadata:
     webpack-plugin-serve:
       optional: true
   checksum: 36a7b0c63f0aabde856a2b43f3f3bfa7919920afa67b4fbcf7d4980b286c7c11e34ada13654d81bf30c3d3e2c12a5b9eef6c15e21a200003b8030809d3ddd6c6
+  languageName: node
+  linkType: hard
+
+"@reach/observe-rect@npm:^1.1.0":
+  version: 1.2.0
+  resolution: "@reach/observe-rect@npm:1.2.0"
+  checksum: 7dd903eeaad0e22c6d973bd26265d91eadba56ab5134701ceb3e85214db75339fae94aa7e8b88a65e8daa64bc7cf1b915d4ffcdfd324466b561dc6adc3c6e070
+  languageName: node
+  linkType: hard
+
+"@reach/portal@npm:^0.16.0":
+  version: 0.16.2
+  resolution: "@reach/portal@npm:0.16.2"
+  dependencies:
+    "@reach/utils": 0.16.0
+    tiny-warning: ^1.0.3
+    tslib: ^2.3.0
+  peerDependencies:
+    react: ^16.8.0 || 17.x
+    react-dom: ^16.8.0 || 17.x
+  checksum: 7413dcd169cfb9854dd0d3a01f811ec19ef170558fcbd00118d676fc02c197d1c0bce1d1357508879d4775169561d103e13a8e4d74cc677eb0037cc7b04f7a1e
+  languageName: node
+  linkType: hard
+
+"@reach/utils@npm:0.16.0":
+  version: 0.16.0
+  resolution: "@reach/utils@npm:0.16.0"
+  dependencies:
+    tiny-warning: ^1.0.3
+    tslib: ^2.3.0
+  peerDependencies:
+    react: ^16.8.0 || 17.x
+    react-dom: ^16.8.0 || 17.x
+  checksum: 36bc0eb41a71798eb6186b23de265ba709e51dae5bf214fb8505c66bb3f2e6a41bb2401457350436ba89ca9e3a50f93a04fe7c33d15648ce11e568a85622d770
   languageName: node
   linkType: hard
 
@@ -4324,7 +4367,10 @@ __metadata:
     gatsby-transformer-remark: ^4.5.0
     gatsby-transformer-sharp: ^3.8.0
     husky: ^8.0.1
+    kbar: ^0.1.0-beta.36
     lint-staged: ^13.0.3
+    lodash: ^4.17.21
+    match-sorter: ^6.3.1
     node-sass: ^6.0.1
     pinst: ^2.1.6
     prettier: 2.7.1
@@ -5165,6 +5211,13 @@ __metadata:
   version: 1.2.9
   resolution: "command-exists@npm:1.2.9"
   checksum: 729ae3d88a2058c93c58840f30341b7f82688a573019535d198b57a4d8cb0135ced0ad7f52b591e5b28a90feb2c675080ce916e56254a0f7c15cb2395277cac3
+  languageName: node
+  linkType: hard
+
+"command-score@npm:^0.1.2":
+  version: 0.1.2
+  resolution: "command-score@npm:0.1.2"
+  checksum: b733fd552d7e569070da3d474b1ed5f54785fdf3dd61670002e0a00b2eff1a547c2b6d3af3683c012f4f39c6455f9e7ee5e9997a79c08048ec37ec2195d3df08
   languageName: node
   linkType: hard
 
@@ -7384,6 +7437,13 @@ __metadata:
   version: 3.1.3
   resolution: "fast-deep-equal@npm:3.1.3"
   checksum: e21a9d8d84f53493b6aa15efc9cfd53dd5b714a1f23f67fb5dc8f574af80df889b3bce25dc081887c6d25457cce704e636395333abad896ccdec03abaf1f3f9d
+  languageName: node
+  linkType: hard
+
+"fast-equals@npm:^2.0.3":
+  version: 2.0.4
+  resolution: "fast-equals@npm:2.0.4"
+  checksum: 1aac8a2e16b33e5e402bb5cd46be65f1ca331903c2c44e3bd75324e8472ee04f0acdbc6889e45fc28f9707ca3964f2a86789b32305d4d8b85dc97f61e446ef4b
   languageName: node
   linkType: hard
 
@@ -10755,6 +10815,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"kbar@npm:^0.1.0-beta.36":
+  version: 0.1.0-beta.36
+  resolution: "kbar@npm:0.1.0-beta.36"
+  dependencies:
+    "@reach/portal": ^0.16.0
+    command-score: ^0.1.2
+    fast-equals: ^2.0.3
+    react-virtual: ^2.8.2
+    tiny-invariant: ^1.2.0
+  peerDependencies:
+    react: ^16.0.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0
+  checksum: 62534a24789bec899432503debf88056b8f66e742c9dab0ecb6a0615f89acfdd14a14a4da5c5d6db77ed81d84d6634dbe82aa948470b166f6819aac551ed63c4
+  languageName: node
+  linkType: hard
+
 "keyv@npm:^3.0.0":
   version: 3.1.0
   resolution: "keyv@npm:3.1.0"
@@ -11379,6 +11455,16 @@ __metadata:
   dependencies:
     repeat-string: ^1.0.0
   checksum: 9bb634a9300016cbb41216c1eab44c74b6b7083ac07872e296f900a29449cf0e260ece03fa10c3e9784ab94c61664d1d147da0315f95e1336e2bdcc025615c90
+  languageName: node
+  linkType: hard
+
+"match-sorter@npm:^6.3.1":
+  version: 6.3.1
+  resolution: "match-sorter@npm:6.3.1"
+  dependencies:
+    "@babel/runtime": ^7.12.5
+    remove-accents: 0.4.2
+  checksum: a4b02b676ac4ce64a89a091539ee4a70a802684713bcf06f2b70787927f510fe8a2adc849f9288857a90906083ad303467e530e8723b4a9756df9994fc164550
   languageName: node
   linkType: hard
 
@@ -14764,6 +14850,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-virtual@npm:^2.8.2":
+  version: 2.10.4
+  resolution: "react-virtual@npm:2.10.4"
+  dependencies:
+    "@reach/observe-rect": ^1.1.0
+  peerDependencies:
+    react: ^16.6.3 || ^17.0.0
+  checksum: 1bebc741b01057829a7d7f29256114caecf0597d41b187cb41e75af77f24a87c780bc1a81ec11205b78ee2e9c801fc5e36b20a9e1ab7ddc70a18dd95417795f8
+  languageName: node
+  linkType: hard
+
 "react@npm:^17.0.2":
   version: 17.0.2
   resolution: "react@npm:17.0.2"
@@ -15155,6 +15252,13 @@ __metadata:
     remark-stringify: ^9.0.0
     unified: ^9.1.0
   checksum: e3432bfa1b0029680302e99a6356c08789b3e908457a71eca37ada6a58497e302f08bd5f62fbad840082a8348c181b7f6f981aaf3cd3112207583ddf793a2429
+  languageName: node
+  linkType: hard
+
+"remove-accents@npm:0.4.2":
+  version: 0.4.2
+  resolution: "remove-accents@npm:0.4.2"
+  checksum: 84a6988555dea24115e2d1954db99509588d43fe55a1590f0b5894802776f7b488b3151c37ceb9e4f4b646f26b80b7325dcea2fae58bc3865df146e1fa606711
   languageName: node
   linkType: hard
 
@@ -17008,6 +17112,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tiny-invariant@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "tiny-invariant@npm:1.2.0"
+  checksum: e09a718a7c4a499ba592cdac61f015d87427a0867ca07f50c11fd9b623f90cdba18937b515d4a5e4f43dac92370498d7bdaee0d0e7a377a61095e02c4a92eade
+  languageName: node
+  linkType: hard
+
+"tiny-warning@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "tiny-warning@npm:1.0.3"
+  checksum: da62c4acac565902f0624b123eed6dd3509bc9a8d30c06e017104bedcf5d35810da8ff72864400ad19c5c7806fc0a8323c68baf3e326af7cb7d969f846100d71
+  languageName: node
+  linkType: hard
+
 "tinycolor2@npm:^1.4.1":
   version: 1.4.2
   resolution: "tinycolor2@npm:1.4.2"
@@ -17221,7 +17339,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2, tslib@npm:^2.0.3, tslib@npm:^2.1.0, tslib@npm:^2.4.0":
+"tslib@npm:^2, tslib@npm:^2.0.3, tslib@npm:^2.1.0, tslib@npm:^2.3.0, tslib@npm:^2.4.0":
   version: 2.4.0
   resolution: "tslib@npm:2.4.0"
   checksum: 8c4aa6a3c5a754bf76aefc38026134180c053b7bd2f81338cb5e5ebf96fefa0f417bff221592bf801077f5bf990562f6264fecbc42cd3309b33872cb6fc3b113
