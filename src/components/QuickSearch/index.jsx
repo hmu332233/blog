@@ -20,6 +20,7 @@ import { navigate } from 'gatsby';
 }
 */
 
+// TODO: 컴포넌트 정리하고, Container에서 카테고리와 페이지 정보 받아서 action 그리도록 변경하기
 const actions = [
   {
     // section: '',
@@ -52,6 +53,39 @@ const actions = [
     keywords: '',
     icon: <span />,
     perform: () => navigate('/contribute'),
+    // priority,
+  },
+  {
+    section: 'Post Category',
+    // subtitle: '',
+    id: 'develop',
+    name: 'Develop',
+    shortcut: [],
+    keywords: '',
+    icon: <span />,
+    perform: () => navigate('/category/develop'),
+    // priority,
+  },
+  {
+    section: 'Post Category',
+    // subtitle: '',
+    id: 'retrospect',
+    name: 'Retrospect',
+    shortcut: [],
+    keywords: '',
+    icon: <span />,
+    perform: () => navigate('/category/retrospect'),
+    // priority,
+  },
+  {
+    section: 'Info',
+    // subtitle: '',
+    id: 'github',
+    name: 'Github',
+    shortcut: [],
+    keywords: '',
+    icon: <span />,
+    perform: () => window.open('https://github.com/hmu332233', '_blank'),
     // priority,
   },
 ];

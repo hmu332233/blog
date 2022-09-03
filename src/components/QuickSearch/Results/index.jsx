@@ -111,13 +111,16 @@ function Results({ className }) {
       <div class="w-full text-sm font-medium text-gray-900 bg-white border border-gray-200">
         {Object.keys(groupedMatches).map((section, sectionIndex) => (
           <div key={`${section}_${sectionIndex}`}>
-            {section && section !== 'undefined' && <h1>{section}</h1>}
+            {section && section !== 'undefined' && (
+              <div className="px-4 py-2 border-t text-sm text-gray-400">
+                {section}
+              </div>
+            )}
             {groupedMatches[section].map((action) => (
               <a
                 key={action.id}
-                aria-current={matches[activeIndex]?.id === action.id}
                 class={cn(
-                  'block py-2 px-4 w-full border-t first:border-t-0 border-gray-200 cursor-pointer',
+                  'block py-2 px-4 w-full border-t first:border-t-0 border-gray-200 cursor-pointer text-md',
                   matches[activeIndex]?.id === action.id &&
                     'bg-blue-500 text-white',
                 )}
