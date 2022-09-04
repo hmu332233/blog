@@ -103,12 +103,12 @@ function Results({ className }) {
   }, [matches.length, select]);
 
   return (
-    <div class="relative bg-white rounded-lg shadow w-96 overflow-hidden">
+    <div class="relative bg-white border rounded-lg shadow shadow-2xl w-96 overflow-hidden">
       <KBarSearch
         className="border-0 text-gray-900 text-sm focus-visible:outline-0 block w-full px-4 p-2.5"
         type="text"
       />
-      <div class="w-full text-sm font-medium text-gray-900 bg-white border border-gray-200">
+      <div class="w-full text-sm font-medium text-gray-900 border-t bg-white">
         {Object.keys(groupedMatches).map((section, sectionIndex) => (
           <div key={`${section}_${sectionIndex}`}>
             {section && section !== 'undefined' && (
