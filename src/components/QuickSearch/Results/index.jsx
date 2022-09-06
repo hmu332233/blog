@@ -55,7 +55,7 @@ function Results({ className }) {
 
     if (action.perform) {
       action.perform(); // 검색 동작 수행
-      query.setVisualState(() => VisualState.animatingOut); // 검색창 닫기
+      query.toggle(); // 검색창 닫기
       return;
     }
 
@@ -124,6 +124,10 @@ function Results({ className }) {
                   matches[activeIndex]?.id === action.id &&
                     'bg-blue-500 text-white',
                 )}
+                onClick={select}
+                onMouseEnter={() =>
+                  setActiveIndex(matches.findIndex((m) => m.id === action.id))
+                }
               >
                 {action.name}
               </a>
