@@ -8,7 +8,7 @@ import Utterances from '@components/Utterances';
 
 function AboutShortPage({ title, description, contents, utterances }) {
   return (
-    <div className="container flex flex-col px-5 py-12 md:py-24 mx-auto max-w-screen-md">
+    <div className="container flex flex-col p-5 mx-auto max-w-screen-md">
       <Seo title={title} description={description} />
       <Profile />
       <PostContents html={contents} lg />
