@@ -57,7 +57,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["node-sass", "npm:6.0.1"],\
             ["pinst", "npm:2.1.6"],\
             ["prettier", "npm:2.7.1"],\
-            ["prismjs", "npm:1.28.0"],\
+            ["prismjs", "npm:1.29.0"],\
             ["prop-types", "npm:15.8.1"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:c6dcce817fa225290e033ab3df9d032741dc228bb28c9cbb4719875ef6095c1c8f4a1ecb6d1cce6f1119ad7c9bb93c31bc307a4e235fab5627d039ca42e55b65#npm:17.0.2"],\
@@ -6647,7 +6647,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["node-sass", "npm:6.0.1"],\
             ["pinst", "npm:2.1.6"],\
             ["prettier", "npm:2.7.1"],\
-            ["prismjs", "npm:1.28.0"],\
+            ["prismjs", "npm:1.29.0"],\
             ["prop-types", "npm:15.8.1"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:c6dcce817fa225290e033ab3df9d032741dc228bb28c9cbb4719875ef6095c1c8f4a1ecb6d1cce6f1119ad7c9bb93c31bc307a4e235fab5627d039ca42e55b65#npm:17.0.2"],\
@@ -11768,7 +11768,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/prismjs", null],\
             ["gatsby", "virtual:c6dcce817fa225290e033ab3df9d032741dc228bb28c9cbb4719875ef6095c1c8f4a1ecb6d1cce6f1119ad7c9bb93c31bc307a4e235fab5627d039ca42e55b65#npm:3.14.6"],\
             ["parse-numeric-range", "npm:1.3.0"],\
-            ["prismjs", "npm:1.28.0"],\
+            ["prismjs", "npm:1.29.0"],\
             ["unist-util-visit", "npm:2.0.3"]\
           ],\
           "packagePeers": [\
@@ -18900,10 +18900,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["prismjs", [\
-        ["npm:1.28.0", {\
-          "packageLocation": "./.yarn/cache/prismjs-npm-1.28.0-28f20a79ff-bde93fb2be.zip/node_modules/prismjs/",\
+        ["npm:1.29.0", {\
+          "packageLocation": "./.yarn/cache/prismjs-npm-1.29.0-6faa5b04b8-007a8869d4.zip/node_modules/prismjs/",\
           "packageDependencies": [\
-            ["prismjs", "npm:1.28.0"]\
+            ["prismjs", "npm:1.29.0"]\
           ],\
           "linkType": "HARD"\
         }]\
