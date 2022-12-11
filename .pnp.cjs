@@ -55,7 +55,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash", "npm:4.17.21"],\
             ["match-sorter", "npm:6.3.1"],\
             ["node-sass", "npm:6.0.1"],\
-            ["pinst", "npm:2.1.6"],\
+            ["pinst", "npm:3.0.0"],\
             ["prettier", "npm:2.7.1"],\
             ["prismjs", "npm:1.28.0"],\
             ["prop-types", "npm:15.8.1"],\
@@ -6645,7 +6645,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash", "npm:4.17.21"],\
             ["match-sorter", "npm:6.3.1"],\
             ["node-sass", "npm:6.0.1"],\
-            ["pinst", "npm:2.1.6"],\
+            ["pinst", "npm:3.0.0"],\
             ["prettier", "npm:2.7.1"],\
             ["prismjs", "npm:1.28.0"],\
             ["prop-types", "npm:15.8.1"],\
@@ -10703,15 +10703,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/fresh-npm-0.5.2-ad2bb4c0a2-13ea8b08f9.zip/node_modules/fresh/",\
           "packageDependencies": [\
             ["fresh", "npm:0.5.2"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["fromentries", [\
-        ["npm:1.3.2", {\
-          "packageLocation": "./.yarn/cache/fromentries-npm-1.3.2-f5392090b8-33729c529c.zip/node_modules/fromentries/",\
-          "packageDependencies": [\
-            ["fromentries", "npm:1.3.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -17814,11 +17805,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["pinst", [\
-        ["npm:2.1.6", {\
-          "packageLocation": "./.yarn/cache/pinst-npm-2.1.6-750cbdedeb-3644c352a7.zip/node_modules/pinst/",\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/pinst-npm-3.0.0-5d2b6c1dda-4ae48a6a60.zip/node_modules/pinst/",\
           "packageDependencies": [\
-            ["pinst", "npm:2.1.6"],\
-            ["fromentries", "npm:1.3.2"]\
+            ["pinst", "npm:3.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
