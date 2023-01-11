@@ -22,7 +22,7 @@
     "gatsby-remark-images": "^5.5.0",
     "gatsby-remark-prismjs": "^5.5.0",
     "gatsby-source-filesystem": "^3.8.0",
-    "gatsby-transformer-remark": "^4.5.0",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^3.8.0",
     "kbar": "^0.1.0-beta.36",
     "lodash": "^4.17.21",
