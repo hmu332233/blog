@@ -4364,7 +4364,7 @@ __metadata:
     gatsby-remark-images: ^5.5.0
     gatsby-remark-prismjs: ^5.5.0
     gatsby-source-filesystem: ^3.8.0
-    gatsby-transformer-remark: ^4.5.0
+    gatsby-transformer-remark: ^4.12.0
     gatsby-transformer-sharp: ^3.8.0
     husky: ^8.0.1
     kbar: ^0.1.0-beta.36
@@ -7965,6 +7965,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-core-utils@npm:^2.15.0":
+  version: 2.15.0
+  resolution: "gatsby-core-utils@npm:2.15.0"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    file-type: ^16.5.3
+    fs-extra: ^10.0.0
+    got: ^11.8.2
+    node-object-hash: ^2.3.9
+    proper-lockfile: ^4.1.2
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: 814bf2607e5075adeffa650883134f7dd30ab582a99e806f83595810746e1914da072a8b1b4b508daddef837e912fe151de1d529e1045755107617fdb0354588
+  languageName: node
+  linkType: hard
+
 "gatsby-graphiql-explorer@npm:^1.14.0":
   version: 1.14.0
   resolution: "gatsby-graphiql-explorer@npm:1.14.0"
@@ -8417,12 +8435,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-remark@npm:^4.5.0":
-  version: 4.11.0
-  resolution: "gatsby-transformer-remark@npm:4.11.0"
+"gatsby-transformer-remark@npm:^4.12.0":
+  version: 4.12.0
+  resolution: "gatsby-transformer-remark@npm:4.12.0"
   dependencies:
     "@babel/runtime": ^7.15.4
-    gatsby-core-utils: ^2.14.0
+    gatsby-core-utils: ^2.15.0
     gray-matter: ^4.0.2
     hast-util-raw: ^6.0.2
     hast-util-to-html: ^7.1.2
@@ -8445,7 +8463,7 @@ __metadata:
     unist-util-visit: ^2.0.3
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: 74b4b0d9ea1af5ebb10764f5b6e2f3bc4d596824a95df8ad681ded314fd31175613d93a048923a6e6bf87c790169afcb5bd2b444c0657672427453e1740a4ef9
+  checksum: 26bd49610443ac27e44d5faef0f91c51231f41ce70946ae0ee3875d6c1075b7d4179b1d5dcbd397d9a63bc632efb9dbd7cd6765cfa994b4f960240bc301dc0c3
   languageName: node
   linkType: hard
 
