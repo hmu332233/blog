@@ -3,10 +3,12 @@ import PropTypes from 'prop-types';
 
 import classNames from 'classnames';
 
+import { contents } from './styles.module.scss';
+
 function PostContents(props) {
   return (
     <article
-      className={classNames('prose', props.lg && 'md:prose-lg')}
+      className={classNames('prose', props.lg && 'md:prose-lg', contents)}
       dangerouslySetInnerHTML={{ __html: props.html }}
     />
   );
