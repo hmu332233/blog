@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import * as styles from './styles.module.scss';
+import { header } from './styles.module.scss';
 
 import classNames from 'classnames';
 
@@ -8,7 +8,7 @@ import { Link } from 'gatsby';
 
 function Header(props) {
   return (
-    <header className={classNames('text-gray-700 body-font', styles.Header)}>
+    <header className={classNames('text-gray-700 body-font', header)}>
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <Link
           className="flex title-font font-black items-center text-gray-900 mb-4 md:mb-0"
